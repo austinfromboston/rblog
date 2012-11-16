@@ -1,4 +1,8 @@
 Rblog::Application.routes.draw do
+  resource :homes
+  root :to => "homes#show"
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
