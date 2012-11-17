@@ -1,4 +1,6 @@
 Rblog::Application.routes.draw do
+  devise_for :participants
+
   resource :homes
   root :to => "homes#show"
 
